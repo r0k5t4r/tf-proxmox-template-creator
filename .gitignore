@@ -1,0 +1,72 @@
+# --------------------------------------------------
+# OpenTofu / Terraform
+# --------------------------------------------------
+
+# Local state
+*.tfstate
+*.tfstate.*
+
+# Dependency directory
+.terraform/
+.terraform.lock.hcl
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# --------------------------------------------------
+# Proxmox / Image build artifacts
+# --------------------------------------------------
+
+# Downloaded cloud images (if ever run locally)
+*.qcow2
+*.img
+*.iso
+
+# Temporary customization artifacts
+*.deb
+*.tmp
+
+# --------------------------------------------------
+# Logs & debug output
+# --------------------------------------------------
+
+*.log
+debug.log
+
+# --------------------------------------------------
+# Editor / OS files
+# --------------------------------------------------
+
+# macOS
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# VS Code
+.vscode/
+
+# IntelliJ / JetBrains
+.idea/
+
+# --------------------------------------------------
+# Misc
+# --------------------------------------------------
+
+# SSH
+*.pem
+*.key
+*.pub
