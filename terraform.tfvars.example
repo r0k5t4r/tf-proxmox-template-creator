@@ -1,0 +1,42 @@
+# Proxmox API Configuration
+proxmox_api_url          = "https://192.168.2.11:8006/api2/json"
+proxmox_api_token_id     = "root@pam!terraform"
+proxmox_api_token_secret = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+proxmox_node             = "pve"
+proxmox_tls_insecure     = true  # Set to false in production
+proxmox_debug            = false
+
+# SSH Access to Proxmox Host (for snippet upload)
+sshuser = "root"
+sshpass = "your-proxmox-password"
+
+# Cloud Image Configuration
+image_url      = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img"
+image_filename = "jammy-server-cloudimg-amd64.img"
+image_dir      = "/var/lib/vz/template/qcow2"
+
+# Template Configuration
+template_name = "ubuntu-22.04-template"
+template_vmid = 3001
+
+# Proxmox Storage & Networking
+storage     = "local-lvm"
+bridge      = "vmbr0"
+
+# Cloud-init DNS Configuration
+nameserver   = "8.8.8.8"
+searchdomain = "example.com"
+
+# Cloud-init User Configuration
+ci_user     = "ubuntu"
+ci_password = "ubuntu"
+ci_upgrade  = false
+
+# Vendor Cloud-init Configuration
+vendor_cloud_init_name = "default-cloud-init.yaml"
+
+# Optional: SSH Private Key Path
+# ssh_private_key = "~/.ssh/id_rsa"
+
+# Optional: Domain Name
+# domain = "example.com"
